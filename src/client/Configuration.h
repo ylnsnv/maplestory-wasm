@@ -155,6 +155,24 @@ namespace jrc
         ServerIP() : StringEntry("ServerIP", "127.0.0.1") {}
     };
 
+    // Port which the client will connect to.
+    struct ServerPort : public Configuration::StringEntry
+    {
+        ServerPort() : StringEntry("ServerPort", "8484") {}
+    };
+
+    // WebSocket Proxy IP
+    struct ProxyIP : public Configuration::StringEntry
+    {
+        ProxyIP() : StringEntry("ProxyIP", "") {}
+    };
+
+    // WebSocket Proxy Port
+    struct ProxyPort : public Configuration::StringEntry
+    {
+        ProxyPort() : StringEntry("ProxyPort", "8080") {}
+    };
+
     // Wether to start in fullscreen mode.
     struct Fullscreen : public Configuration::BoolEntry
     {
