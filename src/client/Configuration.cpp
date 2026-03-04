@@ -24,6 +24,7 @@ namespace jrc
     Configuration::Configuration()
     {
         settings.emplace<MapleStoryServerIp>();
+        settings.emplace<AssetsServerProtocol>();
         settings.emplace<Fullscreen>();
         settings.emplace<VSync>();
         settings.emplace<FontPathNormal>();

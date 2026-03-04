@@ -30,11 +30,12 @@ namespace LazyFS
 						// Construct URL dynamically from configured IP
 						var ip = Module.LazyFS.AssetsServerIP;
 						var port = (Module.LazyFS.AssetsServerPort !== undefined && Module.LazyFS.AssetsServerPort !== null) ? Module.LazyFS.AssetsServerPort : '8765';
-						Module.LazyFS.ASSETS_WS_URL = "ws://" + ip + ":" + port;
+						var protocol = Module.LazyFS.AssetsServerProtocol ? Module.LazyFS.AssetsServerProtocol : 'ws';
+						Module.LazyFS.ASSETS_WS_URL = protocol + "://" + ip + ":" + port;
 					} else {
 						// Auto-detect WebSocket URL based on page location
 						// Default to same host, port 8765
-						var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+						var protocol = Module.LazyFS.AssetsServerProtocol ? (Module.LazyFS.AssetsServerProtocol + ':') : (window.location.protocol === 'https:' ? 'wss:' : 'ws:');
 						var host = window.location.hostname;
 						Module.LazyFS.ASSETS_WS_URL = protocol + '//' + host + ':8765';
 					}

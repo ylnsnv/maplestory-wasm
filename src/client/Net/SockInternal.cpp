@@ -116,7 +116,7 @@ namespace
 	  public:
 		int connect(const std::string& address, const std::string& port)
 		{
-			std::string ws_url = "ws://";
+			std::string ws_url = jrc::Setting<jrc::AssetsServerProtocol>::get().load() + "://";
 			
 			std::string proxy_ip = jrc::Setting<jrc::ProxyIP>::get().load();
 			std::string proxy_port = jrc::Setting<jrc::ProxyPort>::get().load();

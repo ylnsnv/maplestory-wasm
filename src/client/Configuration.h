@@ -173,6 +173,12 @@ namespace jrc
         ProxyPort() : StringEntry("ProxyPort", "8080") {}
     };
 
+    // WebSocket / WSS protocol
+    struct AssetsServerProtocol : public Configuration::StringEntry
+    {
+        AssetsServerProtocol() : StringEntry("AssetsServerProtocol", "ws") {}
+    };
+
     // Wether to start in fullscreen mode.
     struct Fullscreen : public Configuration::BoolEntry
     {

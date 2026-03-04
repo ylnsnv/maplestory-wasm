@@ -63,6 +63,7 @@ namespace jrc
         loadConfigString("MapleStoryServerPort", Setting<MapleStoryServerPort>::get());
         loadConfigString("ProxyIP", Setting<ProxyIP>::get());
         loadConfigString("ProxyPort", Setting<ProxyPort>::get());
+        loadConfigString("AssetsServerProtocol", Setting<AssetsServerProtocol>::get());
 #endif
 
         if (Error error = Session::get().init())
