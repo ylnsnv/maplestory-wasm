@@ -76,8 +76,8 @@ namespace jrc
 
     Error Session::init()
     {
-        std::string HOST = Setting<ServerIP>::get().load();
-        std::string PORT = Setting<ServerPort>::get().load();
+        std::string HOST = Setting<MapleStoryServerIp>::get().load();
+        std::string PORT = Setting<MapleStoryServerPort>::get().load();
 
         if (!init(HOST.c_str(), PORT.c_str()))
         {

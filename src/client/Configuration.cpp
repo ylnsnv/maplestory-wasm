@@ -23,7 +23,7 @@ namespace jrc
 {
     Configuration::Configuration()
     {
-        settings.emplace<ServerIP>();
+        settings.emplace<MapleStoryServerIp>();
         settings.emplace<Fullscreen>();
         settings.emplace<VSync>();
         settings.emplace<FontPathNormal>();

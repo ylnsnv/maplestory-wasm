@@ -59,8 +59,8 @@ namespace jrc
             }
         };
 
-        loadConfigString("ServerIP", Setting<ServerIP>::get());
-        loadConfigString("ServerPort", Setting<ServerPort>::get());
+        loadConfigString("MapleStoryServerIp", Setting<MapleStoryServerIp>::get());
+        loadConfigString("MapleStoryServerPort", Setting<MapleStoryServerPort>::get());
         loadConfigString("ProxyIP", Setting<ProxyIP>::get());
         loadConfigString("ProxyPort", Setting<ProxyPort>::get());
 #endif

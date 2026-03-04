@@ -26,10 +26,10 @@ namespace LazyFS
 					
 					if (customWsUrl) {
 						Module.LazyFS.ASSETS_WS_URL = customWsUrl;
-					} else if (Module.LazyFS.ASSETS_WS_IP !== undefined && Module.LazyFS.ASSETS_WS_IP !== null) {
+					} else if (Module.LazyFS.AssetsServerIP !== undefined && Module.LazyFS.AssetsServerIP !== null) {
 						// Construct URL dynamically from configured IP
-						var ip = Module.LazyFS.ASSETS_WS_IP;
-						var port = (Module.LazyFS.ASSETS_WS_PORT !== undefined && Module.LazyFS.ASSETS_WS_PORT !== null) ? Module.LazyFS.ASSETS_WS_PORT : '8765';
+						var ip = Module.LazyFS.AssetsServerIP;
+						var port = (Module.LazyFS.AssetsServerPort !== undefined && Module.LazyFS.AssetsServerPort !== null) ? Module.LazyFS.AssetsServerPort : '8765';
 						Module.LazyFS.ASSETS_WS_URL = "ws://" + ip + ":" + port;
 					} else {
 						// Auto-detect WebSocket URL based on page location

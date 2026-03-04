@@ -150,15 +150,15 @@ namespace jrc
     };
 
     // IP Adress which the client will connect to.
-    struct ServerIP : public Configuration::StringEntry
+    struct MapleStoryServerIp : public Configuration::StringEntry
     {
-        ServerIP() : StringEntry("ServerIP", "127.0.0.1") {}
+        MapleStoryServerIp() : StringEntry("MapleStoryServerIp", "127.0.0.1") {}
     };
 
     // Port which the client will connect to.
-    struct ServerPort : public Configuration::StringEntry
+    struct MapleStoryServerPort : public Configuration::StringEntry
     {
-        ServerPort() : StringEntry("ServerPort", "8484") {}
+        MapleStoryServerPort() : StringEntry("MapleStoryServerPort", "8484") {}
     };
 
     // WebSocket Proxy IP
