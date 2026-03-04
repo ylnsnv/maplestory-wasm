@@ -1,8 +1,8 @@
 {
-  "AssetsServerIP": "159.195.69.24",
+  "AssetsServerIP": null,
   "AssetsServerPort": null,
-  "MapleStoryServerIp": "159.195.69.24",
+  "MapleStoryServerIp": null,
   "MapleStoryServerPort": null,
-  "ProxyIP": "159.195.69.24",
+  "ProxyIP": null,
   "ProxyPort": null
 }
